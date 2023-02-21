@@ -9,11 +9,19 @@ jobs:
     steps:
     - name: Checkout code
       uses: actions/checkout@v2
+      
     - name: Install NPM dependencies
       run: npm i
+      
     - name: Build package
       run: npm run build
-    - name: Publish to NPM
+      
+    - name: Configure npm
+      run: |
+          echo '//registry.npmjs.org/:_authToken=${NPM_AUTH_TOKEN}' > .npmrc
+          cat .npmrc
       env:
         NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+        
+    - name: Publish to NPM
       run: npm publish
