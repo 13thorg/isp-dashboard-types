@@ -13,6 +13,10 @@ jobs:
               with:
                   node-version: 14
                   registry-url: http://registry.npmjs.org
+            - name: Install Packages
+              run: npm install
+            - name: Package Build
+              run: npm run build
             - name: publish
               run: npm publish --access public
               env:
