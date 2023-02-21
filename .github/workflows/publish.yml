@@ -1,0 +1,21 @@
+name: Publish NPM Package
+on:
+  push:
+    branches:
+      - main
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+    - name: Install NPM dependencies
+      run: npm ci
+    - name: Install Packages
+      run: npm i
+    - name: Build package
+      run: npm run build
+    - name: Publish to NPM
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
+      run: npm publish
