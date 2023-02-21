@@ -1,21 +1,20 @@
-name: Publish NPM Package
-on:
-  push:
-    branches:
-      - main
+name: "publish npm"
+
+on: push
+
 jobs:
-  publish:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Install NPM dependencies
-        run: npm i
-      - name: Build package
-        run: npm run build
-      - name: Who IAM
-        run: npm whoam
-      - name: Publish to NPM
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-        run: npm publish
+    publish:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v2
+            - name: node
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 14
+                  registry-url: http://registry.npmjs.org
+            - name: publish
+              run: npm publish --access public
+              working-directory: my-package
+              env:
+                  NODE_AUTH_TOKEN: ${{secrets.NPM_AUTH_TOKEN}}
