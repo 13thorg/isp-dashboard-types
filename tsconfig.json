@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "types": ["node"],
+    "target": "es5",
+    "module": "commonjs",
+    "baseUrl": "./",
+    "outDir": "./lib",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "importHelpers": true,
+    "typeRoots": ["node_modules/@types"],
+    "esModuleInterop": true,
+    "strict": true,
+    "declaration": true
+    // "sourceMap": true,
+  },
+  "include": ["src"],
+  "exclude": ["node_modues"]
+}

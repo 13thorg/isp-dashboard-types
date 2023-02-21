@@ -1,0 +1,29 @@
+{
+  "name": "isp-dashboard-types",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "prepare": "npm run build",
+    "dev": "nodemon src/app.ts",
+    "start": "node lib/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/13thOrg/isp-dashboard-types.git"
+  },
+  "author": "13th <email.sahil@yahoo.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/13thOrg/isp-dashboard-types/issues"
+  },
+  "homepage": "https://github.com/13thOrg/isp-dashboard-types#readme",
+  "dependencies": {
+    "@types/node": "^18.14.0"
+  },
+  "files": [
+    "lib/**/*"
+  ]
+}
