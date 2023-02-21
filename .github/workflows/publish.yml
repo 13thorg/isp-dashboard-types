@@ -18,13 +18,13 @@ jobs:
           registry-url: https://registry.npmjs.org/
           node-version: '14'
 
-      Install dependencies (required by Run tests step)
+      #Install dependencies (required by Run tests step)
       - name: Install dependencies
-       run: npm install
+        run: npm install
 
-      Tests
+      #Tests
       - name: Run tests
-       run: npm test
+        run: npm test
 
       # Configure Git
       - name: Git configuration
