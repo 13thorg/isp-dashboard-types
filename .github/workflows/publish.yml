@@ -13,7 +13,9 @@ jobs:
         run: npm i
       - name: Build package
         run: npm run build
+      - name: Who IAM
+        run: npm whoam
       - name: Publish to NPM
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_AUTH_TOKEN }}
-        run: npm publish --registry=https://npm.pkg.github.com/
+        run: npm publish
