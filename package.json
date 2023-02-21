@@ -1,5 +1,5 @@
 {
-  "name": "@sahilks/isp-dashboard-types",
+  "name": "isp-dashboard-types",
   "version": "1.0.4",
   "description": "",
   "main": "lib/app.js",
