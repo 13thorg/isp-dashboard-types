@@ -1,0 +1,20 @@
+export declare enum databaseName {
+    Roles = 0,
+    Admins = 1,
+    Customers = 2,
+    Devices = 3,
+    Plans = 4,
+    Orders = 5,
+    Invoices = 6,
+    Transactions = 7,
+    paymentGateway = 8,
+    Groups = 9,
+    Configs = 10,
+    SmsTemplates = 11,
+    EmailTemplates = 12,
+    NotificationTemplates = 13,
+    SmsHistory = 14,
+    EmailHistory = 15,
+    NotificationHistory = 16,
+    Ott = 17
+}
