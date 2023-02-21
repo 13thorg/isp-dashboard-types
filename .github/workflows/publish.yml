@@ -1,10 +1,9 @@
 name: "publish npm"
-
+name: Publish Package
 on:
-  workflow_run:
-    workflows: [gitversioning]
-    types:
-      - completed
+  push:
+    branches:
+      - main
 
 jobs:
   publish:
