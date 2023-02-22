@@ -1,5 +1,5 @@
 import { PaymentGatewayEnum } from "./paymentGateway.interface";
-export declare type TranslationType = {
+export type TranslationType = {
     _id?: string;
     orderId: string;
     transactionId: string;

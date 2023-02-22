@@ -1,6 +1,6 @@
 import { PricingType } from "./common.interface";
 import { PlansType, RepeatType } from "./plans.interface";
-export declare type ActivePlansType = {
+export type ActivePlansType = {
     _id?: string;
     Plan: string | PlansType;
     repeat: RepeatType;
@@ -12,7 +12,7 @@ export declare type ActivePlansType = {
     CreatedAt?: Date;
     UpdatedAt?: Date;
 };
-export declare type NextBillingType = {
+export type NextBillingType = {
     enable: boolean;
     generateBefore: number;
 };

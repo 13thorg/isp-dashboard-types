@@ -1,11 +1,11 @@
-export declare type RootLevelGroupType = {
+export type RootLevelGroupType = {
     _id?: string;
     name: string;
     deletable: boolean;
     createdAt: Date;
     updatedAt: Date;
 };
-export declare type GroupType = {
+export type GroupType = {
     _id?: string;
     name: string;
     groupBy: string | RootLevelGroupType;

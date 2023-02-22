@@ -1,6 +1,6 @@
 import { PricingType } from "./common.interface";
 import { OttType } from "./ott.interface";
-export declare type PlansType = {
+export type PlansType = {
     _id?: string;
     title: string;
     isp: string;
@@ -14,7 +14,7 @@ export declare type PlansType = {
     CreatedAt?: Date;
     UpdatedAt?: Date;
 };
-export declare type RepeatType = {
+export type RepeatType = {
     type: RepeatEnum;
     discount: number;
 };

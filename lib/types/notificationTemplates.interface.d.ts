@@ -1,4 +1,4 @@
-export declare type NotificationTemplatesType = {
+export type NotificationTemplatesType = {
     _id?: string;
     title: string;
     message: string;

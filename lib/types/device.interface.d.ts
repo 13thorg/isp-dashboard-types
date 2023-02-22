@@ -1,4 +1,4 @@
-export declare type DevicesType = {
+export type DevicesType = {
     _id?: string;
     name: string;
     companyName: string;

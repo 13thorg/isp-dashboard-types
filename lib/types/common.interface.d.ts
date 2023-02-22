@@ -1,4 +1,4 @@
-export declare type AddressType = {
+export type AddressType = {
     line1: string;
     line2: string;
     pin: string;
@@ -7,29 +7,29 @@ export declare type AddressType = {
     country: string;
     groupBy: string;
 };
-export declare type NameType = {
+export type NameType = {
     fname: string;
     lname: string;
 };
-export declare type IspUser = {
+export type IspUser = {
     uid: string;
     isp: string;
 };
-export declare type PricingType = {
+export type PricingType = {
     amount: number;
     tax: TaxType;
     total: number;
 };
-export declare type DiscountType = {
+export type DiscountType = {
     rate: number;
     amount: number;
     type: string;
 };
-export declare type TaxType = {
+export type TaxType = {
     enable: boolean;
     rate: number;
     name: string;
 };
-export declare type Objects = {
+export type Objects = {
     [key: string]: string;
 };

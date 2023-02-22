@@ -1,4 +1,4 @@
-export declare type EmailTemplatesType = {
+export type EmailTemplatesType = {
     _id?: string;
     title: string;
     subject: string;
