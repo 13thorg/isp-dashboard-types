@@ -1,12 +1,15 @@
 export type ConfigType = {
     _id?: string;
+    name: string;
+    description: string;
     key: ConfigKeyEnum;
     value: any;
     CreatedAt?: Date;
     UpdatedAt?: Date;
 };
 export declare enum ConfigKeyEnum {
-    INVOICE_NOTE = 0,
-    COMPANY_NAME = 1,
-    COMPANY_IMAGE = 2
+    DEFAULT_PROFILE_URL = "DEFAULT_PROFILE_URL",
+    INVOICE_NOTE = "INVOICE_NOTE",
+    COMPANY_NAME = "COMPANY_NAME",
+    COMPANY_IMAGE = "COMPANY_IMAGE"
 }
