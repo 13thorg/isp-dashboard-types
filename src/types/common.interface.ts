@@ -1,3 +1,4 @@
+import { DatabaseName } from "./database.interfaces"
 
 export type AddressType = {
     line1: string,
@@ -12,11 +13,6 @@ export type AddressType = {
 export type NameType = {
     fname: string,
     lname: string
-}
-
-export type IspUser = {
-    uid: string,
-    isp: string
 }
 
 
@@ -41,4 +37,9 @@ export type TaxType = {
 
 export type Objects = {
     [key: string]: string
+}
+
+export type ReferenceType = {
+    dbName: DatabaseName,
+    refId: string
 }

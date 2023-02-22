@@ -1,4 +1,5 @@
-import { AddressType, IspUser, NameType } from "./common.interface";
+import { AddressType, NameType } from "./common.interface";
+import { IspType } from "./isp.interface";
 export type CustomerType = {
     _id?: string;
     profile: string;
@@ -7,10 +8,10 @@ export type CustomerType = {
     email: string;
     phone: string;
     password: string;
-    ispUser: IspUser[];
+    ispUser: IspType[];
     ip: string;
     address: AddressType;
     groupBy: string;
-    CreatedAt?: Date;
-    UpdatedAt?: Date;
+    createdAt?: Date;
+    updatedAt?: Date;
 };

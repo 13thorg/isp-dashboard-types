@@ -8,5 +8,6 @@ export * from './types/device.interface'
 export * from './types/emailTemplates.interface'
 export * from './types/group.interface'
 export * from './types/notificationTemplates.interface'
-export * from './types/orders.interface'
+export * from './types/invoice.interface'
 export * from './types/ott.interface'
+// all good
