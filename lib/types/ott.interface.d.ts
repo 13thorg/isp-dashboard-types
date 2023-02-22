@@ -1,5 +1,5 @@
 import { PricingType } from "./common.interface";
-export declare type OttType = {
+export type OttType = {
     _id?: string;
     title: string;
     icon: string;

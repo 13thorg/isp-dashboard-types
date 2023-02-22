@@ -1,5 +1,5 @@
 import { Objects } from "./common.interface";
-export declare type PaymentGatewayType = {
+export type PaymentGatewayType = {
     _id?: string;
     name: string;
     title: PaymentGatewayEnum;

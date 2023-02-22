@@ -68,7 +68,7 @@ export declare enum RolesEnum {
     READ_OTT = 66,
     DELETE_OTT = 67
 }
-export declare type RolesType = {
+export type RolesType = {
     _id?: string;
     name: string;
     Roles: {

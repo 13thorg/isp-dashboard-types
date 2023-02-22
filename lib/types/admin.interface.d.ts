@@ -1,5 +1,5 @@
 import { AddressType, NameType } from "./common.interface";
-export declare type AdminsType = {
+export type AdminsType = {
     _id?: string;
     profile: string;
     name: NameType;

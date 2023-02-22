@@ -1,5 +1,5 @@
 import { DiscountType, PricingType } from "./common.interface";
-export declare type OrdersType = {
+export type OrdersType = {
     _id?: string;
     Items: OrderItemsType[];
     discount: DiscountType[];
@@ -10,7 +10,7 @@ export declare type OrdersType = {
     CreatedAt?: Date;
     UpdatedAt?: Date;
 };
-export declare type OrderItemsType = {
+export type OrderItemsType = {
     _id?: string;
     title: string;
     price: PricingType;

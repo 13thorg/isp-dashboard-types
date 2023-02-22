@@ -1,4 +1,4 @@
-export declare type SmsTemplatesType = {
+export type SmsTemplatesType = {
     _id?: string;
     title: string;
     message: string;

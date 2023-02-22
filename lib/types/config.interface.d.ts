@@ -1,4 +1,4 @@
-export declare type ConfigType = {
+export type ConfigType = {
     _id?: string;
     key: ConfigKeyEnum;
     value: any;

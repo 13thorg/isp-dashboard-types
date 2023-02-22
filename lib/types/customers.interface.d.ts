@@ -1,5 +1,5 @@
 import { AddressType, IspUser, NameType } from "./common.interface";
-export declare type CustomerType = {
+export type CustomerType = {
     _id?: string;
     profile: string;
     name: NameType;
