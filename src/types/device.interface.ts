@@ -8,7 +8,7 @@ export type DevicesType = {
     uid: string,
     images: string[],
     groupBy: string,
-    assignTo: string,
+    customer: string,
     CreatedAt?: Date,
     UpdatedAt?: Date
 }

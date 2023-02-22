@@ -9,11 +9,19 @@ export type PlansType = {
     keyPoints: string[],
     price: PricingType,
     popular: boolean,
+    visibleTo: VisibleTo,
     ott: OttType[],
     repeat: RepeatType[]
     groupBy: string,
     CreatedAt?: Date,
     UpdatedAt?: Date,
+}
+
+export type VisibleTo = {
+    customer_mobile: boolean
+    customer_web: boolean
+    customer_Care: boolean
+    customer_Promotion: boolean
 }
 
 export type RepeatType = {
