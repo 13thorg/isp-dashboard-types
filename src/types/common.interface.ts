@@ -43,3 +43,7 @@ export type ReferenceType = {
     dbName: DatabaseName,
     refId: string
 }
+
+export type ObjectType = {
+    [key: string]: any | ObjectType
+}
