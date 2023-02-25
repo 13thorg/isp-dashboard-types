@@ -1,4 +1,5 @@
 import { DatabaseName } from "./database.interfaces";
+import { RepeatEnum } from "./plans.interface";
 export type AddressType = {
     line1: string;
     line2: string;
@@ -13,8 +14,9 @@ export type NameType = {
     lname: string;
 };
 export type PricingType = {
+    repeat: RepeatEnum;
     amount: number;
-    tax: TaxType;
+    tax: TaxType[];
     total: number;
 };
 export type DiscountType = {
