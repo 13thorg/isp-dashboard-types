@@ -11,5 +11,6 @@ export type GroupType = {
 export declare enum GroupByEnum {
     FOR_CUSTOMER = "FOR_CUSTOMER",
     FOR_ADDRESS = "FOR_ADDRESS",
-    FOR_PLANS = "FOR_PLANS"
+    FOR_PLANS = "FOR_PLANS",
+    FOR_ISP = "FOR_ISP"
 }
