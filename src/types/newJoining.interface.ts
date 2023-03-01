@@ -6,12 +6,22 @@ export type NewJoiningInputType = {
     companyName: string,
     email: string,
     phone: string,
-    nimberOfConnections: number,
-    connectionType: string,
     ispProvider: string,
+    nimberOfConnections: number,
+    estimateConnectionDate: Date,
     plan: string,
+    planDuration: string,
     address: AddressType,
-    location: AddressType,
+    location?: string[],
+    reason?: string,
+    status: NewJoiningEnum,
     createdAt?: Date,
     updatedAt?: Date
+}
+
+export enum NewJoiningEnum {
+    OPEN = "OPEN",
+    READY_FOR_CONNECTION = "READY_FOR_CONNECTION",
+    DONE = "DONE",
+    REJECTED = "REJECTED"
 }

@@ -11,4 +11,5 @@ export * from './types/notificationTemplates.interface'
 export * from './types/invoice.interface'
 export * from './types/ott.interface'
 export * from './types/roles.interface'
+export * from './types/newJoining.interface'
 // all good

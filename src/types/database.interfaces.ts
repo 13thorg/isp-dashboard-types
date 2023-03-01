@@ -17,5 +17,6 @@ export enum DatabaseName {
     SmsHistory = "SmsHistory",
     EmailHistory = "EmailHistory",
     NotificationHistory = "NotificationHistory",
-    Ott = "Ott"
+    Ott = "Ott",
+    NewJoining = "NewJoining",
 }
