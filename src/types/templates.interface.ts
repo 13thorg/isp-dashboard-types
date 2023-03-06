@@ -1,17 +1,30 @@
 import { ObjectType } from "./common.interface"
 
+export type TemplatesUpdateType = {
+    _id?: string,
+    title: string,
+    message: string,
+    active: boolean,
+    description: string,
+    sms?: TemplateSmsType,
+    email?: TemplateEmailType,
+    notification?: TemplateNotificationType,
+}
+
 export type TemplatesType = {
     _id?: string,
     about: TemplateAboutType,
     title: string,
     message: string,
+    deleteable: boolean,
+    active: boolean,
     keys: TemplatesRequiredKeysType[],
     description: string,
     sendBy: SendByEnum,
-    for: TemplateForEnum,
-    sms: TemplateSmsType,
-    email: TemplateEmailType,
-    notification: TemplateNotificationType,
+    templateFor: TemplateForEnum,
+    sms?: TemplateSmsType,
+    email?: TemplateEmailType,
+    notification?: TemplateNotificationType,
     CreatedAt?: Date,
     UpdatedAt?: Date
 }
@@ -28,6 +41,8 @@ export type TemplateAboutType = {
 }
 
 export type TemplateSmsType = {
+    url: string,
+    token: string,
     flowId: string,
     sender: string,
 }
@@ -35,11 +50,12 @@ export type TemplateSmsType = {
 export type TemplateEmailType = {
     user: string,
     pass: string,
+    service: string,
 }
 
 export type TemplateNotificationType = {
     url: string,
-    token: ObjectType[],
+    token: string,
     mutable_content: boolean,
     sound: string,
     click_action: string

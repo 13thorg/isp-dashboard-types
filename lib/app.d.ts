@@ -11,3 +11,6 @@ export * from './types/invoice.interface';
 export * from './types/ott.interface';
 export * from './types/roles.interface';
 export * from './types/newJoining.interface';
+export * from './types/smtp.interface';
+export * from './types/sms.interface';
+export * from './types/fcm.interface';
