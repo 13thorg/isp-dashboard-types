@@ -40,7 +40,7 @@ export type ObjectType = {
     [key: string]: any | ObjectType;
 };
 export type NotificationPayloadType = {
-    sendTo: string;
+    sendTo: string[];
     userId: string;
     data: ObjectType;
 };

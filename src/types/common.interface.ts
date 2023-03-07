@@ -53,7 +53,7 @@ export type ObjectType = {
 
 
 export type NotificationPayloadType = {
-    sendTo: string,
+    sendTo: string[],
     userId: string,
     data: ObjectType
 }

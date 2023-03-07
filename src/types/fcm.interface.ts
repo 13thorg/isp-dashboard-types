@@ -12,7 +12,4 @@ export type FcmPayloadType = {
     to: string[],
     title: string,
     description: string,
-    mutable_content: boolean,
-    sound: string,
-    click_action: string,
 }
