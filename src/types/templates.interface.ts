@@ -58,7 +58,8 @@ export type TemplateNotificationType = {
     token: string,
     mutable_content: boolean,
     sound: string,
-    click_action: string
+    click_action: string,
+    icon: string
 }
 
 export enum TemplateForEnum {
