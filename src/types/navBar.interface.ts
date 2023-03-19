@@ -1,7 +1,8 @@
 export type NavMenuType = {
   title: string;
   icon: string;
-  actionType: NavMenuActionEnum;
+  action: NavMenuActionEnum;
+  alerts: number;
   children?: NavMenuType[];
 };
 
