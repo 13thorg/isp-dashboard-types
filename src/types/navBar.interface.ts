@@ -3,6 +3,7 @@ export type NavMenuType = {
   icon: string;
   action: NavMenuActionEnum;
   alerts: number;
+  value: string;
   children?: NavMenuType[];
 };
 
