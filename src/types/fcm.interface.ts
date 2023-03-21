@@ -46,8 +46,14 @@ export type FmcCredForAdminType = {
     userType: FmcCredUserTypeEnum
     fcmKey: string,
     platform: FmcCredPlatFormEnum,
+    device: FmcCredDeviceType
     createdAt?: Date | string
     updatedAt?: Date | string
+}
+
+export type FmcCredDeviceType = {
+    name: string,
+    key: string
 }
 
 export enum FmcCredPlatFormEnum {

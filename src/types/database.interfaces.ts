@@ -1,6 +1,7 @@
 export enum DatabaseName {
     Role = "Role",
     Admin = "Admin",
+    FcmDevice = "FcmDevice",
     IspUid = "IspUid",
     Customer = "Customer",
     Device = "Device",
