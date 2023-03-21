@@ -40,3 +40,22 @@ export enum NotifyForEnum {
     ADMIN = "ADMIN",
     CUSTOMER = "CUSTOMER",
 }
+
+export type FmcCredForAdminType = {
+    userId: string,
+    userType: FmcCredUserTypeEnum
+    fcmKey: string,
+    platform: FmcCredPlatFormEnum,
+    createdAt?: Date | string
+    updatedAt?: Date | string
+}
+
+export enum FmcCredPlatFormEnum {
+    WEBAPP = 'WEBAPP',
+    MOBILE = 'MOBILE'
+}
+
+export enum FmcCredUserTypeEnum {
+    CUSTOMER = 'CUSTOMER',
+    ADMIN = 'ADMIN'
+}
