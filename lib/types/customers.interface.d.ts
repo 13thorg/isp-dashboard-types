@@ -15,3 +15,16 @@ export type CustomerType = {
     createdAt?: Date;
     updatedAt?: Date;
 };
+export type CustomerInputType = {
+    _id?: string;
+    profile: string;
+    name: NameType;
+    companyName: string;
+    email: string;
+    phone: string;
+    password: string;
+    address: AddressType;
+    groupBy: string;
+    createdAt?: Date;
+    updatedAt?: Date;
+};

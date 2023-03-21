@@ -39,3 +39,8 @@ export type ReferenceType = {
 export type ObjectType = {
     [key: string]: any | ObjectType;
 };
+export type NotificationPayloadType = {
+    sendTo: string[];
+    userId: string;
+    data: ObjectType;
+};
