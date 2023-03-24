@@ -15,5 +15,9 @@ export * from './types/newJoining.interface'
 export * from './types/smtp.interface'
 export * from './types/sms.interface'
 export * from './types/fcm.interface'
+<<<<<<< Updated upstream
 export * from './types/alertMessagesListing.interface'
+=======
+export * from './components/navigationPath.component'
+>>>>>>> Stashed changes
 // all good
