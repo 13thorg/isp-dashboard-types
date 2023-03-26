@@ -16,4 +16,5 @@ export * from './types/smtp.interface';
 export * from './types/sms.interface';
 export * from './types/fcm.interface';
 export * from './types/alertMessagesListing.interface';
+export * from './types/table.interface';
 export * from './components/navigationPath.component';
