@@ -3,7 +3,7 @@ name: Manage npm package version
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   build:
