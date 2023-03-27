@@ -4,6 +4,7 @@ export type TableHeaderType = {
   type: TableDataEnum;
   actions?: TableClicksType[];
   middleware?: Function;
+  isActive: boolean
 };
 
 export type TableClicksType = {
