@@ -4,13 +4,13 @@ import { TableHeaderType } from "./table.interface"
 export type RecordsOutputType = {
     records: any[],
     totalCount: number,
-    roles: RolesEnum,
-    tableHeader: TableHeaderType[]
+    tableHeader: TableHeaderType[],
+    roles: { [key in RolesEnum]: boolean },
 }
 
 export type RecordOutputType = {
-    records: any,
-    roles: RolesEnum,
+    record: any,
+    roles: { [key in RolesEnum]: boolean },
 }
 
 export type UpsetOutputType = {
