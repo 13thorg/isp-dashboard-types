@@ -1,11 +1,44 @@
-name: "Publish Package"
+name: Manage npm package version
+
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Authenticate with GitHub
+        uses: actions/github-script@v4
+        with:
+          script: |
+            const token = process.env.GH_TOKEN;
+            github.auth(token);
+
+      - name: Set git user
+        run: |
+          git config --global user.email "email.sahil@yahoo.com"
+          git config --global user.name "SahilKumarGit"
+
+      - name: Stash changes
+        run: git stash
+
+      - name: Update package version
+        run: |
+          npm version patch
+
+      - name: Apply stash
+        run: git push
+
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+
   publish:
+    needs: build
     runs-on: ubuntu-latest
     steps:
       - name: checkout
@@ -17,8 +50,6 @@ jobs:
           registry-url: https://registry.npmjs.org
       - name: Install Packages
         run: npm install
-      - name: Package Build
-        run: npm run build
       - name: publish
         run: npm publish --access public
         env:
