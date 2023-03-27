@@ -41,6 +41,9 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - name: Wait for 20 seconds
+        run: sleep 20
+
       - name: checkout
         uses: actions/checkout@v2
       - name: node
