@@ -19,4 +19,4 @@ export * from './types/alertMessagesListing.interface'
 export * from './types/table.interface'
 export * from './types/apiResponse.interface'
 export * from './components/navigationPath.component'
-// all good
+// all good!
