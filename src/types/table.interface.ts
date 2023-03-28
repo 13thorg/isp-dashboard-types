@@ -24,7 +24,7 @@ export enum TableDataEnum {
 export type TableModelType = {
   _id: string,
   aid: string,
-  collection: string,
+  collectionName: string,
   structure: TableHeaderType[]
   createdAt?: Date
   updatedAt?: Date
