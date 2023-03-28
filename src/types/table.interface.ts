@@ -26,4 +26,6 @@ export type TableModelType = {
   aid: string,
   collection: string,
   structure: TableHeaderType[]
+  createdAt?: Date
+  updatedAt?: Date
 } 
