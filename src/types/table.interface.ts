@@ -20,3 +20,10 @@ export enum TableDataEnum {
   date = "date",
   agoDate = "agoDate",
 }
+
+export type TableModelType = {
+  _id: string,
+  aid: string,
+  collection: string,
+  structure: TableHeaderType[]
+} 
