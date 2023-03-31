@@ -16,7 +16,7 @@ export type InputType = {
     onKeyUp: Function
 }
 
-export type InputSelectEnumType{
+export type InputSelectEnumType = {
     key: string,
     name: string
 }
