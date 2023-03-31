@@ -18,5 +18,6 @@ export * from './types/fcm.interface'
 export * from './types/alertMessagesListing.interface'
 export * from './types/table.interface'
 export * from './types/apiResponse.interface'
+export * from './types/inputs.interface'
 export * from './components/navigationPath.component'
 // all good!
