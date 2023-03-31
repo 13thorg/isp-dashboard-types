@@ -12,8 +12,8 @@ export type InputType = {
     enum: InputSelectEnumType[],
     disabled: boolean,
     errorMessages: string[],
-    onChange: Function,
-    onKeyUp: Function
+    onChange?: (each: InputType, i: number, value: any) => void,
+    onKeyUp?: (each: InputType, i: number, value: any) => void
 }
 
 export type InputSelectEnumType = {
