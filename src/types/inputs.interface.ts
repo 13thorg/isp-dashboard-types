@@ -8,6 +8,7 @@ export type InputGroupType = {
 
 export type InputType = {
   title: string;
+  placeholder?: string;
   key: string;
   type: InputTypeEnum;
   enum: InputSelectEnumType[];
@@ -37,4 +38,6 @@ export enum InputTypeEnum {
   date = "date",
   time = "time",
   color = "color",
+  image = "image",
+  document = "document",
 }
