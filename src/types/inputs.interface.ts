@@ -16,6 +16,7 @@ export type InputType = {
   errorMessages: string[];
   zodValidator: any;
   value: any;
+  dicumentLimit?: number
   onChange?: (each: InputType, i: number, value: any) => void;
   onKeyUp?: (each: InputType, i: number, value: any) => void;
 };

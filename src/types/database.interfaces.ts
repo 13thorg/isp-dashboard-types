@@ -3,6 +3,7 @@ export enum DatabaseName {
     Admin = "Admin",
     TableStructure = "TableStructure",
     MediaFile = "MediaFile",
+    Document = "Document",
     FcmDevice = "FcmDevice",
     IspUid = "IspUid",
     Customer = "Customer",
