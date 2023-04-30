@@ -34,6 +34,7 @@ export enum GroupViewEnum {
 export enum InputTypeEnum {
   text = "text",
   number = "number",
+  numberAsString = "numberAsString",
   select = "select",
   checkbox = "checkbox",
   date = "date",
