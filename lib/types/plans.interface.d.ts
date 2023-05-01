@@ -27,10 +27,10 @@ export type RepeatType = {
     discount: number;
 };
 export declare enum RepeatEnum {
-    ONE_TIME = 0,
-    WEEKLY = 1,
-    MONTHLY = 2,
-    QUARTERLY = 3,
-    SEMIANNUALLY = 4,
-    ANNUALLY = 5
+    ONE_TIME = "ONE_TIME",
+    WEEKLY = "WEEKLY",
+    MONTHLY = "MONTHLY",
+    QUARTERLY = "QUARTERLY",
+    SEMIANNUALLY = "SEMIANNUALLY",
+    ANNUALLY = "ANNUALLY"
 }

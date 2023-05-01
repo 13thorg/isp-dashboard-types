@@ -5,8 +5,8 @@ export type GroupType = {
     deletable: boolean,
     key: string,
     color: string,
-    createdAt: Date,
-    updatedAt: Date,
+    createdAt?: Date,
+    updatedAt?: Date,
 }
 
 export enum GroupByEnum {

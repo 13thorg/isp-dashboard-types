@@ -32,11 +32,11 @@ export type RepeatType = {
 }
 
 export enum RepeatEnum {
-    ONE_TIME,
-    WEEKLY,
-    MONTHLY,
-    QUARTERLY,
-    SEMIANNUALLY,
-    ANNUALLY,
+    ONE_TIME='ONE_TIME',
+    WEEKLY='WEEKLY',
+    MONTHLY='MONTHLY',
+    QUARTERLY='QUARTERLY',
+    SEMIANNUALLY='SEMIANNUALLY',
+    ANNUALLY='ANNUALLY',
 }
 

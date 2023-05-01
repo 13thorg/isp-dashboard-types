@@ -17,6 +17,7 @@ export enum TableDataEnum {
   string = "string",
   badge = "badge",
   status = "status",
+  color = "color",
   date = "date",
   agoDate = "agoDate",
 }
