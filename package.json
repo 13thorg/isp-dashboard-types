@@ -1,6 +1,6 @@
 {
   "name": "@sahilks/isp-dashboard-types",
-  "version": "1.0.45",
+  "version": "1.0.46",
   "description": "",
   "main": "lib/app.js",
   "types": "lib/app.d.ts",
