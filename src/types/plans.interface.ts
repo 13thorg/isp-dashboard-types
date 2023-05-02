@@ -14,7 +14,7 @@ export type PlansType = {
     visibleTo: VisibleTo,
     ott: string[],
     repeat: RepeatType[]
-    groupBy: string[],
+    groupBy: string,
     CreatedAt?: Date,
     UpdatedAt?: Date,
 }

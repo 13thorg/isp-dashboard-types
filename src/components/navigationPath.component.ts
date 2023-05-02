@@ -8,4 +8,6 @@ export const Paths = {
     groupList: 'settings/groups',
     ottListing:'services/otts',
     addOtt:'services/otts/add-new',
+    planListing:'services/plans',
+    addPlan:'services/plans/add-new',
 }
