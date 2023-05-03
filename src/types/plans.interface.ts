@@ -13,7 +13,6 @@ export type PlansType = {
     popular: boolean,
     visibleTo: VisibleTo,
     ott: string[],
-    repeat: RepeatType[]
     groupBy: string,
     CreatedAt?: Date,
     UpdatedAt?: Date,
