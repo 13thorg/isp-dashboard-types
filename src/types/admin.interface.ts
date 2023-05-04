@@ -17,7 +17,12 @@ export type AdminsType = {
 }
 
 export enum AdminsStatusEnum {
-    OFFLINE='OFFLINE',
-    ONLINE='ONLINE',
-    AWAY='AWAY',
+    OFFLINE = 'OFFLINE',
+    ONLINE = 'ONLINE',
+    AWAY = 'AWAY',
+}
+
+export enum AttendanceEnum {
+    PRESENT = 'PRESENT',
+    ABSENT = 'ABSENT',
 }

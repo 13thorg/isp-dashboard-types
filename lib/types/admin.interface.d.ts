@@ -19,3 +19,7 @@ export declare enum AdminsStatusEnum {
     ONLINE = "ONLINE",
     AWAY = "AWAY"
 }
+export declare enum AttendanceEnum {
+    PRESENT = "PRESENT",
+    ABSENT = "ABSENT"
+}

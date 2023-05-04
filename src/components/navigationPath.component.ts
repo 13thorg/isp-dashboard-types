@@ -10,4 +10,5 @@ export const Paths = {
     addOtt:'services/otts/add-new',
     planListing:'services/plans',
     addPlan:'services/plans/add-new',
+    attendanceCalender: 'management/attendance',
 }

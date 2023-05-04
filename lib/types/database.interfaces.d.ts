@@ -1,6 +1,7 @@
 export declare enum DatabaseName {
     Role = "Role",
     Admin = "Admin",
+    Attendance = "Attendance",
     TableStructure = "TableStructure",
     MediaFile = "MediaFile",
     Document = "Document",
