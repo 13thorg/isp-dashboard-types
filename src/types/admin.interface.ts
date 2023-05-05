@@ -1,4 +1,5 @@
 import { AddressType, NameType } from "./common.interface"
+import { RolesOnAttendanceType } from "./roles.interface"
 
 export type AdminsType = {
     _id?: string,
@@ -14,6 +15,17 @@ export type AdminsType = {
     status: AdminsStatusEnum,
     createdAt?: Date,
     updatedAt?: Date
+}
+
+export type AdminAttendanceType = {
+    _id: string,
+    profile: string,
+    name: NameType,
+    phone: string,
+    email: string,
+    role: RolesOnAttendanceType,
+    present: number,
+    absent: number
 }
 
 export enum AdminsStatusEnum {

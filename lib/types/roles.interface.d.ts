@@ -78,3 +78,7 @@ export type RolesType = {
     createdAt?: Date;
     updatedAt?: Date;
 };
+export type RolesOnAttendanceType = {
+    _id?: string;
+    name: string;
+};
