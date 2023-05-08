@@ -24,6 +24,7 @@ export type AdminAttendanceType = {
     role: RolesOnAttendanceType;
     present: number;
     absent: number;
+    active: boolean;
 };
 export declare enum AdminsStatusEnum {
     OFFLINE = "OFFLINE",

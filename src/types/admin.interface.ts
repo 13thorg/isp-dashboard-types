@@ -25,7 +25,8 @@ export type AdminAttendanceType = {
     email: string,
     role: RolesOnAttendanceType,
     present: number,
-    absent: number
+    absent: number,
+    active: boolean,
 }
 
 export enum AdminsStatusEnum {
