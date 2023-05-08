@@ -6,11 +6,13 @@ export type RecordsOutputType = {
     totalCount: number,
     tableHeader: TableHeaderType[],
     roles: { [key in RolesEnum]: boolean },
+    [key: string]: any
 }
 
 export type RecordOutputType = {
     record: any,
     roles: { [key in RolesEnum]: boolean },
+    [key: string]: any
 }
 
 export type UpsetOutputType = {
