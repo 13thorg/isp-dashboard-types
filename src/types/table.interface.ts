@@ -20,6 +20,7 @@ export enum TableDataEnum {
   color = "color",
   date = "date",
   agoDate = "agoDate",
+  image = "image",
 }
 
 export type TableModelType = {

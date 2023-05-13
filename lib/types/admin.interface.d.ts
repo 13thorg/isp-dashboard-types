@@ -41,6 +41,17 @@ export type AdminAttendanceType = {
     absent: number;
     active: boolean;
 };
+export type LoginLogType = {
+    _id?: string;
+    aid?: string;
+    version: string;
+    agent: string;
+    ip: string;
+    platform: string;
+    isMobile: boolean;
+    createdAt: string | Date;
+    updatedAt: string | Date;
+};
 export declare enum AdminsStatusEnum {
     OFFLINE = "OFFLINE",
     ONLINE = "ONLINE",
