@@ -1,4 +1,6 @@
 import { PricingType } from "./common.interface";
+import { GroupType } from "./group.interface";
+import { OttType } from "./ott.interface";
 export type PlansType = {
     _id?: string;
     title: string;
@@ -12,8 +14,24 @@ export type PlansType = {
     visibleTo: VisibleTo;
     ott: string[];
     groupBy: string;
-    CreatedAt?: Date;
-    UpdatedAt?: Date;
+    createdAt?: Date;
+    updatedAt?: Date;
+};
+export type PlansOneType = {
+    _id?: string;
+    title: string;
+    isp: GroupType;
+    icon: string;
+    description: string;
+    keyPoints: string[];
+    pricing: PricingType[];
+    defaultPrice: RepeatEnum;
+    popular: boolean;
+    visibleTo: VisibleTo;
+    ott: OttType[];
+    groupBy: GroupType;
+    createdAt?: Date;
+    updatedAt?: Date;
 };
 export type VisibleTo = {
     customer_mobile: boolean;
