@@ -57,3 +57,5 @@ export type NotificationPayloadType = {
     userId: string,
     data: ObjectType
 }
+
+export type TagType = { label: string, icon: string, bg: string }
