@@ -3,6 +3,7 @@ export type GroupType = {
     name: string,
     groupBy: GroupByEnum,
     deletable: boolean,
+    editable: boolean,
     key: string,
     color: string,
     createdAt?: Date,
