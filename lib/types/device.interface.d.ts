@@ -1,13 +1,37 @@
 export type DevicesType = {
     _id?: string;
     name: string;
-    companyName: string;
-    macAddress: string;
-    ip: string;
-    uid: string;
+    description?: string;
+    device: DevicesDetailsType;
+    health: DevicesHealthType;
+    configuration?: Record<DeviceConfigurationEnum, string>;
+    type: string;
     images: string[];
-    groupBy: string;
-    customer: string;
-    CreatedAt?: Date;
-    UpdatedAt?: Date;
+    customer?: string;
+    createdAt?: string | Date;
+    updatedAt?: string | Date;
 };
+export type DevicesDetailsType = {
+    deviceName: string;
+    companyName?: string;
+    model: string;
+    manufactureAt: string;
+    price: number;
+    warranty: number;
+};
+export type DevicesHealthType = {
+    working: boolean;
+    repair?: DevicesRepairType[];
+};
+export type DevicesRepairType = {
+    date: Date;
+    note?: string;
+    price?: number;
+};
+export declare enum DeviceConfigurationEnum {
+    ip = "ip",
+    port = "port",
+    mac = "mac",
+    uid = "uid",
+    setupBoxKey = "setupBoxKey"
+}

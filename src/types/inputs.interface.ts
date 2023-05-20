@@ -36,6 +36,7 @@ export enum InputTypeEnum {
   number = "number",
   numberAsString = "numberAsString",
   select = "select",
+  multiSelect = "multiSelect",
   checkbox = "checkbox",
   date = "date",
   time = "time",
