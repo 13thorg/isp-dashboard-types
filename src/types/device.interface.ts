@@ -17,7 +17,7 @@ export type DevicesDetailsType = {
     deviceName: string,
     companyName?: string,
     model: string,
-    manufactureAt: string,
+    manufactureAt: string | Date,
     price: number,
     warranty: number,
 }
