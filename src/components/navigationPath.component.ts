@@ -12,4 +12,6 @@ export const Paths = {
     addPlan: 'services/plans/add-new',
     attendanceCalender: 'management/attendance',
     companyProfile: 'settings/company/profile',
+    deviceList: 'devices',
+    deviceMapping: 'devices/mapping',
 }
