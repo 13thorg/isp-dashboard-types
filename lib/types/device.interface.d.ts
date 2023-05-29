@@ -48,3 +48,18 @@ export declare enum DeviceConfigurationEnum {
     uid = "uid",
     setupBoxKey = "setupBoxKey"
 }
+export type DtType = {
+    _id?: string;
+    typeName: string;
+    description?: string;
+    configurations: DtConfigType[];
+    createdAt?: string | Date;
+    updatedAt?: string | Date;
+};
+export type DtConfigType = {
+    displayName: string;
+    key: string;
+    isRequired: boolean;
+    placeholder?: string;
+    regex?: string;
+};

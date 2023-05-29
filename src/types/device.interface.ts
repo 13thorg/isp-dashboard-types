@@ -1,3 +1,4 @@
+import { type } from "os"
 import { GroupType } from "./group.interface"
 
 export type DevicesType = {
@@ -53,4 +54,21 @@ export enum DeviceConfigurationEnum {
     mac = 'mac',
     uid = 'uid',
     setupBoxKey = 'setupBoxKey',
+}
+
+export type DtType = {
+    _id?: string,
+    typeName: string,
+    description?: string,
+    configurations: DtConfigType[]
+    createdAt?: string | Date,
+    updatedAt?: string | Date
+}
+
+export type DtConfigType = {
+    displayName: string,
+    key: string,
+    isRequired: boolean,
+    placeholder?: string,
+    regex?: string
 }
