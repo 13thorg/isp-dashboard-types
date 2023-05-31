@@ -53,6 +53,8 @@ export type DtType = {
     typeName: string;
     description?: string;
     configurations: DtConfigType[];
+    linkableDeviceType: string[];
+    linkedDevices?: number;
     createdAt?: string | Date;
     updatedAt?: string | Date;
 };

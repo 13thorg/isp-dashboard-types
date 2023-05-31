@@ -9,6 +9,7 @@ export enum DatabaseName {
     IspUid = "IspUid",
     Customer = "Customer",
     Device = "Device",
+    DeviceType = "DeviceType",
     Group = "Group",
     Plan = "Plan",
     Order = "Order",

@@ -60,7 +60,9 @@ export type DtType = {
     _id?: string,
     typeName: string,
     description?: string,
-    configurations: DtConfigType[]
+    configurations: DtConfigType[],
+    linkableDeviceType: string[],
+    linkedDevices?: number,
     createdAt?: string | Date,
     updatedAt?: string | Date
 }
