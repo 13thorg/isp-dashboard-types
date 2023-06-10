@@ -18,6 +18,23 @@ export type DevicesType = {
     updatedAt?: string | Date
 }
 
+export type OneDevicesType = {
+    _id?: string,
+    name: string,
+    description?: string,
+    device: DevicesDetailsType,
+    health: DevicesHealthType,
+    configuration?: Record<DeviceConfigurationEnum, string>,
+    type: DtType,
+    deleteable: boolean,
+    editable: boolean,
+    rootDevice: boolean,
+    images: string[],
+    customer?: string,
+    createdAt?: string | Date,
+    updatedAt?: string | Date
+}
+
 export type DevicesDetailsType = {
     deviceName: string,
     companyName?: string,
