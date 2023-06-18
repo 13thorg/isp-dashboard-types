@@ -1,4 +1,3 @@
-import { GroupType } from "./group.interface";
 export type DevicesType = {
     _id?: string;
     name: string;
@@ -7,6 +6,22 @@ export type DevicesType = {
     health: DevicesHealthType;
     configuration?: Record<DeviceConfigurationEnum, string>;
     type: string;
+    deleteable: boolean;
+    editable: boolean;
+    rootDevice: boolean;
+    images: string[];
+    customer?: string;
+    createdAt?: string | Date;
+    updatedAt?: string | Date;
+};
+export type OneDevicesType = {
+    _id?: string;
+    name: string;
+    description?: string;
+    device: DevicesDetailsType;
+    health: DevicesHealthType;
+    configuration?: Record<DeviceConfigurationEnum, string>;
+    type: DtType;
     deleteable: boolean;
     editable: boolean;
     rootDevice: boolean;
@@ -38,8 +53,9 @@ export type DeviceMappedType = {
     description?: string;
     device: DevicesDetailsType;
     health: DevicesHealthType;
-    type: Partial<GroupType>;
-    child: DeviceMappedType[];
+    type: Partial<DtType>;
+    child: string[];
+    _child: DeviceMappedType[];
 };
 export declare enum DeviceConfigurationEnum {
     ip = "ip",

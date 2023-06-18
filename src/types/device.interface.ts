@@ -61,8 +61,9 @@ export type DeviceMappedType = {
     description?: string,
     device: DevicesDetailsType,
     health: DevicesHealthType,
-    type: Partial<GroupType>,
-    child: DeviceMappedType[]
+    type: Partial<DtType>,
+    child: string[],
+    _child: DeviceMappedType[]
 }
 
 export enum DeviceConfigurationEnum {
