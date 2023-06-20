@@ -10,6 +10,7 @@ export type DevicesType = {
     editable: boolean;
     rootDevice: boolean;
     images: string[];
+    child?: string[];
     customer?: string;
     createdAt?: string | Date;
     updatedAt?: string | Date;
@@ -20,7 +21,8 @@ export type OneDevicesType = {
     description?: string;
     device: DevicesDetailsType;
     health: DevicesHealthType;
-    configuration?: Record<DeviceConfigurationEnum, string>;
+    configuration?: Record<string, string>;
+    child?: string[];
     type: DtType;
     deleteable: boolean;
     editable: boolean;

@@ -39,11 +39,23 @@ export type ReferenceType = {
 export type ObjectType = {
     [key: string]: any | ObjectType;
 };
+export type SuggestionType = {
+    title: string;
+    message: string;
+    type: SuggestionEnum;
+    icon?: string;
+};
 export type NotificationPayloadType = {
     sendTo: string[];
     userId: string;
     data: ObjectType;
 };
+export declare enum SuggestionEnum {
+    SUCCESS = "success",
+    ERROR = "error",
+    WARNING = "warning",
+    INFO = "info"
+}
 export type TagType = {
     label: string;
     icon: string;
