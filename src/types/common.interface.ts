@@ -58,9 +58,15 @@ export type SuggestionType = {
 }
 
 export type NotificationPayloadType = {
-    sendTo: string[],
     userId: string,
+    userType:UserTypeEnum,
+    senderId: string,
     data: ObjectType
+}
+
+export enum UserTypeEnum {
+    CUSTOMER = 'CUSTOMER',
+    ADMIN = 'ADMIN'
 }
 
 export enum SuggestionEnum {

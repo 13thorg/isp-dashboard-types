@@ -46,10 +46,15 @@ export type SuggestionType = {
     icon?: string;
 };
 export type NotificationPayloadType = {
-    sendTo: string[];
     userId: string;
+    userType: UserTypeEnum;
+    senderId: string;
     data: ObjectType;
 };
+export declare enum UserTypeEnum {
+    CUSTOMER = "CUSTOMER",
+    ADMIN = "ADMIN"
+}
 export declare enum SuggestionEnum {
     SUCCESS = "success",
     ERROR = "error",

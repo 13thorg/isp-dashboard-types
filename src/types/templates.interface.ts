@@ -31,8 +31,7 @@ export type TemplatesType = {
 
 export type TemplatesRequiredKeysType = {
     key: string,
-    type: TemplatesDataTypeEnum,
-    children?: TemplatesRequiredKeysType
+    template: string,
 }
 
 export type TemplateAboutType = {
@@ -58,10 +57,14 @@ export type TemplateNotificationType = {
     token: string,
     mutable_content: boolean,
     sound: string,
-    click_action: string,
+    action: TemplateNotificationClickType[],
     icon: string
 }
 
+export type TemplateNotificationClickType = {
+    label: string,
+    onClick: string
+}
 export enum TemplateForEnum {
     CUSTOMER_EMAIL_VERIFICATION = "CUSTOMER_EMAIL_VERIFICATION",
     CUSTOMER_PHONE_VERIFICATION = "CUSTOMER_PHONE_VERIFICATION",

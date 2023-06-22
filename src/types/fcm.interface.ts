@@ -1,11 +1,12 @@
 import { ObjectType } from "./common.interface"
+import { TemplateNotificationClickType } from "./templates.interface"
 
 export type FcmConfigType = {
     url: string,
     token: string,
     mutable_content: boolean,
     sound: string,
-    click_action: string,
+    action: TemplateNotificationClickType[],
     icon: string
 }
 
@@ -33,7 +34,7 @@ export type NotificationComposeType = {
     descricption: string,
     message: string,
     icon: string,
-    click_action: string
+    action: TemplateNotificationClickType[]
 }
 
 export enum NotifyForEnum {

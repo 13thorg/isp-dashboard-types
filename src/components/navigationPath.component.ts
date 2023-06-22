@@ -14,5 +14,6 @@ export const Paths = {
     companyProfile: 'settings/company/profile',
     deviceList: 'devices',
     deviceMapping: 'devices/mapping',
-    devicetypesListing:'settings/device/device-type'
+    devicetypesListing:'settings/device/device-type',
+    templates:'settings/communication/templates'
 }
