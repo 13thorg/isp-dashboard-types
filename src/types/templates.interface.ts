@@ -2,13 +2,11 @@ import { ObjectType } from "./common.interface"
 
 export type TemplatesUpdateType = {
     _id?: string,
+    about: TemplateAboutType,
     title: string,
     message: string,
     active: boolean,
     description: string,
-    sms?: TemplateSmsType,
-    email?: TemplateEmailType,
-    notification?: TemplateNotificationType,
 }
 
 export type TemplatesType = {
@@ -25,8 +23,8 @@ export type TemplatesType = {
     sms?: TemplateSmsType,
     email?: TemplateEmailType,
     notification?: TemplateNotificationType,
-    CreatedAt?: Date,
-    UpdatedAt?: Date
+    createdAt?: Date,
+    updatedAt?: Date
 }
 
 export type TemplatesRequiredKeysType = {
