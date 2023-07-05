@@ -1,4 +1,3 @@
-import { ObjectType } from "./common.interface"
 import { TemplateNotificationClickType } from "./templates.interface"
 
 export type FcmConfigType = {
@@ -14,19 +13,6 @@ export type FcmPayloadType = {
     to: string[],
     title: string,
     description: string,
-}
-
-
-
-export type FcmNotificationType = {
-    _id?: string
-    notifyFor: NotifyForEnum,
-    ref: string,
-    compose: NotificationComposeType
-    makeAsRead?: boolean,
-    readAt?: Date,
-    createdAt?: Date,
-    updatedAt?: Date
 }
 
 export type NotificationComposeType = {
