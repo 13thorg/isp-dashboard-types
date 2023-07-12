@@ -1,5 +1,6 @@
 import { DatabaseName } from "./database.interfaces"
 import { RepeatEnum } from "./plans.interface"
+import { TemplateNotificationClickType } from "./templates.interface"
 
 export type AddressType = {
     line1: string,
@@ -57,11 +58,25 @@ export type SuggestionType = {
     icon?: string
 }
 
-export type NotificationPayloadType = {
-    userId: string,
-    userType:UserTypeEnum,
-    senderId: string,
+export type NotifySMSPayloadType = {
+    sendTo: SendToType
     data: ObjectType
+}
+
+export type NotifySMTPPayloadType = {
+    sendTo: SendToType
+    data: ObjectType
+}
+
+export type NotifyFCMPayloadType = {
+    userIds: string[]
+    data: ObjectType,
+}
+
+export type SendToType = {
+    userId: string,
+    email?: string,
+    phone?: string
 }
 
 export enum UserTypeEnum {
@@ -69,11 +84,20 @@ export enum UserTypeEnum {
     ADMIN = 'ADMIN'
 }
 
+export enum PlatformTypeEnum {
+    WEB = 'WEB',
+    APP = 'APP'
+}
+
 export enum SuggestionEnum {
     SUCCESS = 'success',
     ERROR = 'error',
     WARNING = 'warning',
     INFO = 'info'
+}
+
+export enum IconTypeEnum {
+    LOGIN_ALERT = 'LOGIN_ALERT'
 }
 
 export type TagType = { label: string, icon: string, bg: string }

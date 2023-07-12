@@ -45,21 +45,39 @@ export type SuggestionType = {
     type: SuggestionEnum;
     icon?: string;
 };
-export type NotificationPayloadType = {
-    userId: string;
-    userType: UserTypeEnum;
-    senderId: string;
+export type NotifySMSPayloadType = {
+    sendTo: SendToType;
     data: ObjectType;
+};
+export type NotifySMTPPayloadType = {
+    sendTo: SendToType;
+    data: ObjectType;
+};
+export type NotifyFCMPayloadType = {
+    userIds: string[];
+    data: ObjectType;
+};
+export type SendToType = {
+    userId: string;
+    email?: string;
+    phone?: string;
 };
 export declare enum UserTypeEnum {
     CUSTOMER = "CUSTOMER",
     ADMIN = "ADMIN"
+}
+export declare enum PlatformTypeEnum {
+    WEB = "WEB",
+    APP = "APP"
 }
 export declare enum SuggestionEnum {
     SUCCESS = "success",
     ERROR = "error",
     WARNING = "warning",
     INFO = "info"
+}
+export declare enum IconTypeEnum {
+    LOGIN_ALERT = "LOGIN_ALERT"
 }
 export type TagType = {
     label: string;

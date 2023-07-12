@@ -53,8 +53,8 @@ export type TemplateEmailType = {
 export type TemplateNotificationType = {
     url: string,
     token: string,
-    mutable_content: boolean,
-    sound: string,
+    mutable_content?: boolean,
+    sound?: string,
     action: TemplateNotificationClickType[],
     icon: string
 }
