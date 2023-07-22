@@ -65,6 +65,7 @@ export type Notification = {
     userIds: string[],
     payload: NotificationPayloadType,
     readByIds: string[],
+    makeAsRead?: boolean, /*THIS IS TEMP KEY*/
     createdAt?: Date,
     updatedAt?: Date
 };
