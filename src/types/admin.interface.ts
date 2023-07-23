@@ -13,6 +13,7 @@ export type AdminsType = {
     deleteable: boolean,
     active: boolean,
     status: AdminsStatusEnum,
+    notifications?: AdminNotificationConfigType,
     createdAt?: Date,
     updatedAt?: Date
 }
@@ -29,6 +30,7 @@ export type AdminsOneType = {
     deleteable: boolean,
     active: boolean,
     status: AdminsStatusEnum,
+    notifications?: AdminNotificationConfigType,
     createdAt?: Date,
     updatedAt?: Date
 }
@@ -66,4 +68,10 @@ export enum AdminsStatusEnum {
 export enum AttendanceEnum {
     PRESENT = 'PRESENT',
     ABSENT = 'ABSENT',
+}
+
+export type AdminNotificationConfigType = {
+    loginAlert: boolean
+    communicationAlert: boolean
+    transactionAlert: boolean
 }
