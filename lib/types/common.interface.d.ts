@@ -8,6 +8,7 @@ export type AddressType = {
     state: string;
     country: string;
     groupBy: string;
+    geoLocation?: string[];
 };
 export type NameType = {
     fname: string;

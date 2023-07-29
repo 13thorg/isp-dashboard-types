@@ -1,32 +1,44 @@
 import { AddressType, NameType } from "./common.interface"
-import { IspType } from "./isp.interface"
 
-export type CustomerType = {
+export type Customer = {
     _id?: string,
-    profile: string,
+    profile?: string,
     name: NameType,
-    companyName: string,
-    email: string,
-    phone: string,
+    companyName?: string,
+    email: ContactType,
+    phone: ContactType,
     password: string,
-    ispUser: IspType[],
-    ip: string,
+    doc: DocumentType,
     address: AddressType,
-    groupBy: string,
+    groupBy?: string,
+    isActive: boolean,
+    isDeleted: boolean,
+    notification: NotificationConfigForCustomer,
+    createdBy?: string,
+    updatedBy?: string,
     createdAt?: Date,
     updatedAt?: Date
 }
 
-export type CustomerInputType = {
-    _id?: string,
-    profile: string,
-    name: NameType,
-    companyName: string,
-    email: string,
-    phone: string,
-    password: string,
-    address: AddressType,
-    groupBy: string,
-    createdAt?: Date,
-    updatedAt?: Date
+export type ContactType = {
+    isVerified: boolean,
+    value: string
+}
+
+export type DocumentType = {
+    docType: DocumentEnum,
+    images: string[],
+    note: string,
+    isVerified: boolean
+}
+
+export type NotificationConfigForCustomer = {
+    loginAlert: boolean
+}
+
+export enum DocumentEnum {
+    AADHAR = 'AADHAR',
+    DRIVING_LICENCE = 'DRIVING_LICENCE',
+    PASSPORT = 'PASSPORT',
+    OTHER = 'OTHER'
 }

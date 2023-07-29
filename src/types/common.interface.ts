@@ -1,6 +1,5 @@
 import { DatabaseName } from "./database.interfaces"
 import { RepeatEnum } from "./plans.interface"
-import { TemplateNotificationClickType } from "./templates.interface"
 
 export type AddressType = {
     line1: string,
@@ -10,6 +9,7 @@ export type AddressType = {
     state: string,
     country: string,
     groupBy: string,
+    geoLocation?: string[],
 }
 
 export type NameType = {
