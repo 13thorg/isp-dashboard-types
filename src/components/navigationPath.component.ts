@@ -1,6 +1,7 @@
 export const Paths = {
     login: '/login',
-    customers: 'customers/list',
+    customers: 'customers',
+    customersPendingKYC: 'customers/pendingKYC',
     newJoining: 'customers/new-joining',
     staff: 'management/staffs',
     roles: 'management/roles',

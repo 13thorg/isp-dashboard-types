@@ -1,4 +1,5 @@
 import { DatabaseName } from "./database.interfaces";
+import { GroupType } from "./group.interface";
 import { RepeatEnum } from "./plans.interface";
 export type AddressType = {
     line1: string;
@@ -8,6 +9,16 @@ export type AddressType = {
     state: string;
     country: string;
     groupBy: string;
+    geoLocation?: string[];
+};
+export type AddressOneType = {
+    line1: string;
+    line2: string;
+    pin: string;
+    city: string;
+    state: string;
+    country: string;
+    groupBy: GroupType;
     geoLocation?: string[];
 };
 export type NameType = {
