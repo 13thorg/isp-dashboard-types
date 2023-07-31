@@ -72,5 +72,6 @@ export enum DocumentEnum {
     AADHAR = 'AADHAR',
     DRIVING_LICENCE = 'DRIVING_LICENCE',
     PASSPORT = 'PASSPORT',
+    VOTER_ID = 'VOTER_ID',
     OTHER = 'OTHER'
 }
