@@ -1,4 +1,4 @@
-import { AddressType, NameType } from "./common.interface"
+import { AddressOneType, AddressType, NameType } from "./common.interface"
 import { RolesOnAttendanceType, RolesType } from "./roles.interface"
 
 export type AdminsType = {
@@ -26,7 +26,7 @@ export type AdminsOneType = {
     email: string,
     phone: string,
     password: string,
-    address: AddressType,
+    address: AddressOneType,
     deleteable: boolean,
     active: boolean,
     status: AdminsStatusEnum,

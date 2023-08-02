@@ -96,3 +96,14 @@ export type TagType = {
     icon: string;
     bg: string;
 };
+export type CardInputType = {
+    label: string;
+    value: string;
+    suggession?: CardInputSuggessionType;
+    isOneLine?: boolean;
+};
+export type CardInputSuggessionType = {
+    icon: string;
+    color: string;
+    text: string;
+};
