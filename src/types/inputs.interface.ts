@@ -17,6 +17,7 @@ export type InputType = {
   zodValidator: any;
   value: any;
   dicumentLimit?: number
+  onSearch?: (value: string) => Promise<InputSearchSelectEnumType[]>;
   onChange?: (each: InputType, i: number, value: any) => void;
   onKeyUp?: (each: InputType, i: number, value: any) => void;
 };
@@ -24,6 +25,13 @@ export type InputType = {
 export type InputSelectEnumType = {
   key: string;
   name: string;
+};
+
+export type InputSearchSelectEnumType = {
+  key: string;
+  name: string;
+  description?: string;
+  image?: string;
 };
 
 export enum GroupViewEnum {
@@ -37,6 +45,8 @@ export enum InputTypeEnum {
   numberAsString = "numberAsString",
   select = "select",
   multiSelect = "multiSelect",
+  searchSelect = "searchSelect",
+  searchMultiSelect = "searchMultiSelect",
   checkbox = "checkbox",
   date = "date",
   time = "time",
