@@ -17,7 +17,7 @@ export type InputType = {
   zodValidator: any;
   value: any;
   dicumentLimit?: number
-  onSearch?: (value: string) => Promise<InputSearchSelectEnumType[]>;
+  onSearch?: (value: string, page?: number, count?: number) => Promise<{ list: InputSearchSelectEnumType[], totalCount: number }>;
   onChange?: (each: InputType, i: number, value: any) => void;
   onKeyUp?: (each: InputType, i: number, value: any) => void;
 };
@@ -33,6 +33,38 @@ export type InputSearchSelectEnumType = {
   description?: string;
   image?: string;
 };
+
+export type FilterInputType = {
+  title: string,
+  description?: string,
+  valueType: FilterValueTypeEnum,
+  inputType: FilterInputTypeEnum,
+  value: any[],
+  enum?: InputSelectEnumType[],
+  onSearch?: (value: string, page?: number, count?: number) => Promise<InputSearchSelectResp>;
+  onChange?: (each: InputType, i: number, value: any) => void;
+  onKeyUp?: (each: InputType, i: number, value: any) => void;
+}
+
+export type InputSearchSelectResp = { list: InputSearchSelectEnumType[], totalCount: number }
+
+export enum FilterValueTypeEnum {
+  boolean = 'boolean',
+  date = 'date',
+  objectId = 'objectId',
+  number = 'number',
+  string = 'string'
+}
+
+export enum FilterInputTypeEnum {
+  date = 'date',
+  dateRange = 'dateRange',
+  number = 'number',
+  numberRange = 'numberRange',
+  text = 'text',
+  multiSelect = 'multiSelect',
+  searchAndMultiSelect = 'searchAndMultiSelect'
+}
 
 export enum GroupViewEnum {
   list = "list",

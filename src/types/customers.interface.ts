@@ -18,7 +18,8 @@ export type Customer = {
     createdBy?: string,
     updatedBy?: string,
     createdAt?: Date,
-    updatedAt?: Date
+    updatedAt?: Date,
+    _welcomeNotificationConfig?: WelcomeNotificationConfig
 }
 
 export type CustomerOne = {
@@ -38,7 +39,15 @@ export type CustomerOne = {
     createdBy?: string,
     updatedBy?: string,
     createdAt?: Date,
-    updatedAt?: Date
+    updatedAt?: Date,
+    _welcomeNotificationConfig?: WelcomeNotificationConfig
+}
+
+export type WelcomeNotificationConfig = {
+    sendMail?: boolean,
+    sendSMS?: boolean,
+    sendFCM?: boolean,
+    sendWhatsAppMessage?: boolean,
 }
 
 export type ContactType = {
@@ -67,6 +76,20 @@ export type DocumentType = {
 export type NotificationConfigForCustomer = {
     loginAlert: boolean
 }
+
+// export type CustomerListFilterType = {
+//     filterBy: CustomerListFilterByRnum
+// }
+
+// export type CustomerListFilterByRnum {
+//     ACCOUNT_STATUS,
+//     KYC_STATUS
+//     CREATED_AT,
+//     CREATED_BY,
+//     MODIFIED_AT,
+//     MODIFIED_BY,
+
+// }
 
 export enum DocumentEnum {
     AADHAR = 'AADHAR',

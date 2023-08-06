@@ -18,6 +18,7 @@ export type Customer = {
     updatedBy?: string;
     createdAt?: Date;
     updatedAt?: Date;
+    _welcomeNotificationConfig?: WelcomeNotificationConfig;
 };
 export type CustomerOne = {
     _id?: string;
@@ -37,6 +38,13 @@ export type CustomerOne = {
     updatedBy?: string;
     createdAt?: Date;
     updatedAt?: Date;
+    _welcomeNotificationConfig?: WelcomeNotificationConfig;
+};
+export type WelcomeNotificationConfig = {
+    sendMail?: boolean;
+    sendSMS?: boolean;
+    sendFCM?: boolean;
+    sendWhatsAppMessage?: boolean;
 };
 export type ContactType = {
     isVerified: boolean;
