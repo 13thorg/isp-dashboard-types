@@ -107,3 +107,14 @@ export type CardInputSuggessionType = {
     color: string;
     text: string;
 };
+export declare enum SuggessionTypeEnum {
+    INFO = "INFO",
+    SUCCESS = "SUCCESS",
+    WARNING = "WARNING",
+    ERROR = "ERROR"
+}
+export declare enum OnlineStatusEnum {
+    ONLINE = "ONLINE",
+    OFFLINE = "OFFLINE",
+    AWAY = "AWAY"
+}

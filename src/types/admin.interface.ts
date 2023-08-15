@@ -1,4 +1,4 @@
-import { AddressOneType, AddressType, NameType } from "./common.interface"
+import { AddressOneType, AddressType, NameType, OnlineStatusEnum } from "./common.interface"
 import { RolesOnAttendanceType, RolesType } from "./roles.interface"
 
 export type AdminsType = {
@@ -12,7 +12,7 @@ export type AdminsType = {
     address: AddressType,
     deleteable: boolean,
     active: boolean,
-    status: AdminsStatusEnum,
+    status: OnlineStatusEnum,
     notifications?: AdminNotificationConfigType,
     createdAt?: Date,
     updatedAt?: Date
@@ -29,7 +29,7 @@ export type AdminsOneType = {
     address: AddressOneType,
     deleteable: boolean,
     active: boolean,
-    status: AdminsStatusEnum,
+    status: OnlineStatusEnum,
     notifications?: AdminNotificationConfigType,
     createdAt?: Date,
     updatedAt?: Date
@@ -45,24 +45,6 @@ export type AdminAttendanceType = {
     present: number,
     absent: number,
     active: boolean,
-}
-
-export type LoginLogType = {
-    _id?: string,
-    aid?: string,
-    version: string,
-    agent: string,
-    ip: string,
-    platform: string,
-    isMobile: boolean,
-    createdAt: string | Date,
-    updatedAt: string | Date
-}
-
-export enum AdminsStatusEnum {
-    OFFLINE = 'OFFLINE',
-    ONLINE = 'ONLINE',
-    AWAY = 'AWAY',
 }
 
 export enum AttendanceEnum {

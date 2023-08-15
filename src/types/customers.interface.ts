@@ -1,4 +1,4 @@
-import { AddressOneType, AddressType, NameType } from "./common.interface"
+import { AddressOneType, AddressType, NameType, OnlineStatusEnum } from "./common.interface"
 import { GroupType } from "./group.interface"
 
 export type Customer = {
@@ -15,6 +15,7 @@ export type Customer = {
     isActive: boolean,
     isDeleted: boolean,
     notification: NotificationConfigForCustomer,
+    status?: OnlineStatusEnum,
     createdBy?: string,
     updatedBy?: string,
     createdAt?: Date,
@@ -36,6 +37,7 @@ export type CustomerOne = {
     isActive: boolean,
     isDeleted: boolean,
     notification: NotificationConfigForCustomer,
+    status?: OnlineStatusEnum,
     createdBy?: string,
     updatedBy?: string,
     createdAt?: Date,

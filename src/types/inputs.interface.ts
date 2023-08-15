@@ -37,13 +37,22 @@ export type InputSearchSelectEnumType = {
 export type FilterInputType = {
   title: string,
   description?: string,
+  key: string;
   valueType: FilterValueTypeEnum,
   inputType: FilterInputTypeEnum,
   value: any[],
   enum?: InputSelectEnumType[],
+  searchSelectedEnum?: InputSearchSelectEnumType[],
   onSearch?: (value: string, page?: number, count?: number) => Promise<InputSearchSelectResp>;
   onChange?: (each: InputType, i: number, value: any) => void;
   onKeyUp?: (each: InputType, i: number, value: any) => void;
+}
+
+export type FilterValueType = {
+  key: string;
+  valueType: FilterValueTypeEnum,
+  inputType: FilterInputTypeEnum,
+  value: any[],
 }
 
 export type InputSearchSelectResp = { list: InputSearchSelectEnumType[], totalCount: number }

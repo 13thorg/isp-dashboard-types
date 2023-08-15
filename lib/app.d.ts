@@ -20,4 +20,5 @@ export * from './types/apiResponse.interface';
 export * from './types/inputs.interface';
 export * from './types/fcmDevice.interface';
 export * from './types/notifications.interface';
+export * from './types/loginLogs.interface';
 export * from './components/navigationPath.component';

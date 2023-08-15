@@ -23,6 +23,7 @@ export type NotifyFCMConfigType = {
     mutable_content: boolean;
     sound: string;
     action: NotifyFCMActionType[];
+    isSilent: boolean,
     icon: string;
     image: string;
 };
@@ -48,6 +49,7 @@ export declare enum FCMPriority {
 export type FCMNotificationData = {
     notification: NotificationComposeType;
     actions: NotifyFCMActionType[];
+    isSilent: boolean
 };
 
 export type NotificationComposeType = {
