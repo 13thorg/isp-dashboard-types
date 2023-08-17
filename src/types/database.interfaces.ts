@@ -24,4 +24,5 @@ export enum DatabaseName {
     Ott = "Ott",
     NewJoining = "NewJoining",
     LoginLog = "LoginLog",
+    ActivityLog = "ActivityLog",
 }
