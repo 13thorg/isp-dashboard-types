@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "types": ["node"],
-    "target": "es5",
-    "module": "commonjs",
+    "target": "ES2022",
+    "module": "ES2022",
     "baseUrl": "./",
     "outDir": "./lib",
     "experimentalDecorators": true,
@@ -11,8 +11,8 @@
     "typeRoots": ["node_modules/@types"],
     "esModuleInterop": true,
     "strict": true,
-    "declaration": true
-    // "sourceMap": true,
+    "declaration": true,
+    "sourceMap": true,
   },
   "include": ["src"],
   "exclude": ["node_modues"]
