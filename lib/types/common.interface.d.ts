@@ -1,6 +1,5 @@
 import { DatabaseName } from "./database.interfaces";
 import { GroupType } from "./group.interface";
-import { RepeatEnum } from "./plans.interface";
 export type AddressType = {
     line1: string;
     line2: string;
@@ -117,4 +116,12 @@ export declare enum OnlineStatusEnum {
     ONLINE = "ONLINE",
     OFFLINE = "OFFLINE",
     AWAY = "AWAY"
+}
+export declare enum RepeatEnum {
+    ONE_TIME = "ONE_TIME",
+    WEEKLY = "WEEKLY",
+    MONTHLY = "MONTHLY",
+    QUARTERLY = "QUARTERLY",
+    SEMIANNUALLY = "SEMIANNUALLY",
+    ANNUALLY = "ANNUALLY"
 }

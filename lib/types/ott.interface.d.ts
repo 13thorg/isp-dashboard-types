@@ -1,6 +1,6 @@
-import { PricingType } from "./common.interface";
+import { PricingType, RepeatEnum } from "./common.interface";
 import { GroupType } from "./group.interface";
-import { RepeatEnum, VisibleTo } from "./plans.interface";
+import { VisibleTo } from "./plans.interface";
 export type OttType = {
     _id?: string;
     title: string;

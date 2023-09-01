@@ -1,4 +1,4 @@
-import { PricingType } from "./common.interface"
+import { PricingType, RepeatEnum } from "./common.interface"
 import { GroupType } from "./group.interface"
 import { OttType } from "./ott.interface"
 
@@ -45,14 +45,5 @@ export type VisibleTo = {
 export type RepeatType = {
     type: RepeatEnum,
     discount: number
-}
-
-export enum RepeatEnum {
-    ONE_TIME='ONE_TIME',
-    WEEKLY='WEEKLY',
-    MONTHLY='MONTHLY',
-    QUARTERLY='QUARTERLY',
-    SEMIANNUALLY='SEMIANNUALLY',
-    ANNUALLY='ANNUALLY',
 }
 
