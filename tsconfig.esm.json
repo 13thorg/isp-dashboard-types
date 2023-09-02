@@ -1,0 +1,30 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "esnext",
+    "composite": true,
+    "types": [
+      "node"
+    ],
+    "rootDir": "./src",
+    "outDir": "./lib/esm",
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "importHelpers": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "esModuleInterop": true,
+    "strict": true,
+    "declaration": true,
+    "sourceMap": true,
+  },
+  "include": [
+    "src/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib"
+  ]
+}

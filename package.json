@@ -2,14 +2,15 @@
   "name": "@sahilks/isp-dashboard-types",
   "version": "1.0.91",
   "description": "",
-  "main": "lib/app.js",
-  "types": "lib/app.d.ts",
+  "main": "lib/cjs/app.js",
+  "module": "lib/esm/app.js",
+  "types": "lib/esm/app.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc",
+    "build": "tsc -b",
     "prepare": "npm run build",
-    "dev": "nodemon src/app.ts",
-    "start": "node lib/app.js"
+    "dev": "tsc -b -w",
+    "start": "node lib/cjs/app.js"
   },
   "repository": {
     "type": "git",
