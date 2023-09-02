@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
     "types": ["node"],
-    "target": "ES2015",
-    "module": "CommonJS",
+    "target": "ES2022",
+    "module": "esnext",
     "baseUrl": "./",
     "outDir": "./lib",
     "experimentalDecorators": true,
