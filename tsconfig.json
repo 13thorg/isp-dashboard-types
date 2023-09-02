@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "types": ["node"],
-    "target": "es2015",
+    "target": "ES2015",
     "module": "CommonJS",
     "baseUrl": "./",
     "outDir": "./lib",
