@@ -25,4 +25,5 @@ export enum DatabaseName {
     NewJoining = "NewJoining",
     LoginLog = "LoginLog",
     ActivityLog = "ActivityLog",
+    Service = "Service",
 }
