@@ -7,14 +7,15 @@ export const Paths = {
     roles: 'management/roles',
     addGroup: 'settings/groups/add-new',
     groupList: 'settings/groups',
-    ottListing: 'services/otts',
-    addOtt: 'services/otts/add-new',
-    planListing: 'services/plans',
-    addPlan: 'services/plans/add-new',
+    ottListing: 'otts',
+    addOtt: 'otts/add-new',
+    planListing: 'plans',
+    addPlan: 'plans/add-new',
     attendanceCalender: 'management/attendance',
     companyProfile: 'settings/company/profile',
     deviceList: 'devices',
     deviceMapping: 'devices/mapping',
     devicetypesListing:'settings/device/device-type',
-    templates:'settings/communication/templates'
+    templates:'settings/communication/templates',
+    services: 'services'
 }

@@ -12,6 +12,7 @@ export type InputType = {
   key: string;
   type: InputTypeEnum;
   enum: InputSelectEnumType[];
+  searchSelectedEnum?: InputSearchSelectEnumType[];
   disabled: boolean;
   errorMessages: string[];
   zodValidator: any;
