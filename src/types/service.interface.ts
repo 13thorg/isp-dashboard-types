@@ -44,13 +44,17 @@ export enum ServiceTypeEnum {
 
 export type ServiceItemType = {
     itemId: string,
-    customPrice?: number,
+    customPrice: number,
+    customTax: number,
     quantity: number,
+    total: number,
 }
 
 export type ServiceItemOneType = {
     itemId: PlansType,
-    customPrice?: number,
+    customPrice: number,
+    customTax: number,
+    total: number,
     quantity: number,
 }
 

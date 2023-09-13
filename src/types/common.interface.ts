@@ -147,3 +147,17 @@ export enum RepeatEnum {
     SEMIANNUALLY = 'SEMIANNUALLY',
     ANNUALLY = 'ANNUALLY',
 }
+
+export enum TimeUnitEnum {
+    SECOND = 'SECOND',
+    MINUTE = 'MINUTE',
+    HOUR = 'HOUR',
+    DAY = 'DAY',
+}
+
+export enum TimeUnits {
+    SECOND = 1,
+    MINUTE = 60,
+    HOUR = 3600,
+    DAY = 86400,
+}
