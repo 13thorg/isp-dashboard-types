@@ -20,6 +20,7 @@ export type Customer = {
     updatedBy?: string,
     createdAt?: Date,
     updatedAt?: Date,
+    settings?: CustomerSettingsType,
     _welcomeNotificationConfig?: WelcomeNotificationConfig
 }
 
@@ -42,6 +43,7 @@ export type CustomerOne = {
     updatedBy?: string,
     createdAt?: Date,
     updatedAt?: Date,
+    settings?: CustomerSettingsType,
     _welcomeNotificationConfig?: WelcomeNotificationConfig
 }
 
@@ -77,6 +79,26 @@ export type DocumentType = {
 
 export type NotificationConfigForCustomer = {
     loginAlert: boolean
+}
+
+export type CustomerSettingsType = {
+    invoice: CustomerInvoiceSettingsType
+}
+
+export type CustomerInvoiceSettingsType = {
+    disableInvoicingAfter: number
+    lateFee: CustomerSettingsLateFeeType
+}
+
+export type CustomerSettingsLateFeeType = {
+    lateFeeType: LateFeeTypeEnum,
+    lateFeeValue: number,
+    lateFeeApplyAfterDays: number
+}
+
+export enum LateFeeTypeEnum {
+    PERCENTAGE = 'PERCENTAGE',
+    AMOUNT = 'AMOUNT'
 }
 
 // export type CustomerListFilterType = {

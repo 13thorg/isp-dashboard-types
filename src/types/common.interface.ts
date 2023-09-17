@@ -161,3 +161,10 @@ export enum TimeUnits {
     HOUR = 3600,
     DAY = 86400,
 }
+
+export enum TimeUnitsForMongoDBENum {
+    SECOND = 'second',
+    MINUTE = 'minute',
+    HOUR = 'hour',
+    DAY = 'day',
+}
