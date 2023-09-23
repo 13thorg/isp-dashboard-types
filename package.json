@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/13thOrg/isp-dashboard-types#readme",
   "dependencies": {
+    "@sahilks/isp-init-notifier-sdk": "1.0.7",
     "@types/node": "^18.14.0",
     "chalk": "^4.1.2",
     "tslib": "^2.5.0"

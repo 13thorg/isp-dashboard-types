@@ -19,6 +19,7 @@
     "strict": true,
     "declaration": true,
     "sourceMap": true,
+    "moduleResolution":"node",
   },
   "include": [
     "src/**/*.ts"

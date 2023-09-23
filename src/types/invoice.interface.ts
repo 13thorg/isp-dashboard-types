@@ -1,3 +1,6 @@
+import { Customer } from "./customers.interface"
+import { ServiceType } from "./service.interface"
+
 export type InvoiceItemType = {
     label: string,
     customPrice: number,
@@ -15,6 +18,21 @@ export type InvoiceDiscountType = {
 export type InvoiceType = {
     _id?: string,
     cid: string,
+    sid?: string,
+    invNo: number,
+    Items: InvoiceItemType[],
+    discount: InvoiceDiscountType[],
+    total: number,
+    note: string,
+    status: InvoiceStatusEnum,
+    dueDate: Date,
+    CreatedAt?: Date,
+    UpdatedAt?: Date
+}
+
+export type InvoiceOneType = {
+    _id?: string,
+    cid: Customer,
     sid?: string,
     invNo: number,
     Items: InvoiceItemType[],

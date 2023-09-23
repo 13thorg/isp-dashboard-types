@@ -1,3 +1,4 @@
+import { EmailAuthTypeEnum, EmailPriorityEnum } from "@sahilks/isp-init-notifier-sdk/lib/types/emails.types"
 import { ObjectType } from "./common.interface"
 
 export type TemplatesUpdateType = {
@@ -48,6 +49,10 @@ export type TemplateEmailType = {
     user: string,
     pass: string,
     service: string,
+    host: string
+    authType: EmailAuthTypeEnum
+    priority: EmailPriorityEnum
+    seurce: boolean
 }
 
 export type TemplateNotificationType = {
@@ -74,6 +79,8 @@ export enum TemplateForEnum {
     CUSTOMER_INTERNET_CONNECTION_DONE = "CUSTOMER_INTERNET_CONNECTION_DONE",
 
     ADMIN_LOGIN_ALERT = "ADMIN_LOGIN_ALERT",
+
+    INVOICE_REMINDER_ALERT = "INVOICE_REMINDER_ALERT",
 }
 
 export enum SendByEnum {
