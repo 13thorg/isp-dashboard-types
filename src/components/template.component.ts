@@ -1,30 +1,29 @@
-import { EmailPriorityEnum } from '@sahilks/isp-init-notifier-sdk/lib/types/emails.types';
-import { EmailAuthTypeEnum } from "@sahilks/isp-init-notifier-sdk";
 import { InputSelectEnumType } from "../app";
+import { EmailAuthTypeEnum, EmailPriorityEnum } from "../types/emails.types";
 
 
 export const TemplateEmailAuthType: InputSelectEnumType[] = [
     {
-        key: 'BASIC_AUTH',
+        key: EmailAuthTypeEnum.BASIC_AUTH,
         name: 'Basic Authentication'
     },
     {
-        key: 'ADV_AUTH',
+        key: EmailAuthTypeEnum.ADV_AUTH,
         name: 'Advanced Authentication'
     },
 
 ]
 export const TemplateEmailPriorityType: InputSelectEnumType[] = [
     {
-        key: 'HIGH',
+        key: EmailPriorityEnum.HIGH,
         name: 'High'
     },
     {
-        key: 'MEDIUM',
+        key: EmailPriorityEnum.MEDIUM,
         name: 'Medium'
     },
     {
-        key: 'LOW',
+        key: EmailPriorityEnum.LOW,
         name: 'Low'
     },
 ]

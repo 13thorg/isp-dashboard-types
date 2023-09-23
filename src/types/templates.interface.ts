@@ -1,5 +1,5 @@
-import { EmailAuthTypeEnum, EmailPriorityEnum } from "@sahilks/isp-init-notifier-sdk/lib/types/emails.types"
 import { ObjectType } from "./common.interface"
+import { EmailAuthTypeEnum, EmailPriorityEnum } from "./emails.types"
 
 export type TemplatesUpdateType = {
     _id?: string,
