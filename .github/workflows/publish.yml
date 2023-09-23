@@ -50,6 +50,8 @@ jobs:
           registry-url: https://registry.npmjs.org
       - name: Install Packages
         run: npm install
+      - name: TSC Build
+        run: tsc
       - name: publish
         run: npm publish --access public
         env:
