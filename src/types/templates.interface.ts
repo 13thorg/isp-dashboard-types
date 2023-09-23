@@ -8,6 +8,9 @@ export type TemplatesUpdateType = {
     message: string,
     active: boolean,
     description: string,
+    sms?: Partial<TemplateSmsType>,
+    email?: Partial<TemplateEmailType>,
+    notification?: Partial<TemplateNotificationType>,
 }
 
 export type TemplatesType = {
