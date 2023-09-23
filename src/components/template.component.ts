@@ -5,26 +5,26 @@ import { InputSelectEnumType } from "../app";
 
 export const TemplateEmailAuthType: InputSelectEnumType[] = [
     {
-        key: EmailAuthTypeEnum.BASIC_AUTH,
+        key: 'BASIC_AUTH',
         name: 'Basic Authentication'
     },
     {
-        key: EmailAuthTypeEnum.ADV_AUTH,
+        key: 'ADV_AUTH',
         name: 'Advanced Authentication'
     },
 
 ]
 export const TemplateEmailPriorityType: InputSelectEnumType[] = [
     {
-        key: EmailPriorityEnum.HIGH,
+        key: 'HIGH',
         name: 'High'
     },
     {
-        key: EmailPriorityEnum.MEDIUM,
+        key: 'MEDIUM',
         name: 'Medium'
     },
     {
-        key: EmailPriorityEnum.LOW,
+        key: 'LOW',
         name: 'Low'
     },
 ]
