@@ -83,6 +83,7 @@ export enum GroupViewEnum {
 
 export enum InputTypeEnum {
   text = "text",
+  textarea = "textarea",
   number = "number",
   numberAsString = "numberAsString",
   select = "select",
