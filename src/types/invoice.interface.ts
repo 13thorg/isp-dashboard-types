@@ -17,6 +17,7 @@ export type InvoiceDiscountType = {
 
 export type InvoiceType = {
     _id?: string,
+    label: string,
     cid: string,
     sid?: string,
     invNo: number,
