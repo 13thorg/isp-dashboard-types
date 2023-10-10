@@ -13,3 +13,15 @@ export const getTimeFromRepeatType = (type: RepeatEnum) => {
 export const getTimeFromDays = (num: number) => {
     return num * 86400 * 1000
 }
+
+export const RepeatText = (e: RepeatEnum) => {
+    const data = {
+        ONE_TIME: 'One Time',
+        WEEKLY: 'Weekly',
+        MONTHLY: 'Monthly',
+        QUARTERLY: 'Quarterly',
+        SEMIANNUALLY: 'Semiannually',
+        ANNUALLY: 'Annually',
+    }
+    return data[e];
+}
