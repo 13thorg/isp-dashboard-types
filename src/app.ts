@@ -22,6 +22,7 @@ export * from './types/fcmDevice.interface'
 export * from './types/notifications.interface'
 export * from './types/loginLogs.interface'
 export * from './types/activityLog.interface'
+export * from './types/socket.interface'
 export * from './components/navigationPath.component'
 export * from './components/template.component'
 // all good!
