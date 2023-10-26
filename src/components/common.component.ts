@@ -25,3 +25,26 @@ export const RepeatText = (e: RepeatEnum) => {
     }
     return data[e];
 }
+
+export const collerPallet = {
+    deepblue: '#172b4d',
+    deepblueChild: '#455571',
+
+    white: '#ffffff',
+    whiteChild: '#f1f1f1',
+
+    gray: '#808080',
+    grayChild: '#dddddd',
+
+    red: '#ff5630',
+    redChild: '#ffb8a8',
+
+    yellow: '#ffab00',
+    yellowChild: '#ffd785',
+
+    green: '#36b37e',
+    greenChild: '#8dffcf',
+
+    black: '#000',
+    blackChild: '#424242',
+}

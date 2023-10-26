@@ -2,7 +2,7 @@ import { Customer } from "./customers.interface"
 import { ServiceType } from "./service.interface"
 
 export type InvoiceItemType = {
-    label: string,
+    title: string,
     customPrice: number,
     customTax: number,
     quantity: number,
@@ -10,40 +10,47 @@ export type InvoiceItemType = {
 }
 
 export type InvoiceDiscountType = {
-    name: string,
+    title: string,
     amount: number,
     percentage: number,
 }
 
 export type InvoiceType = {
     _id?: string,
-    label: string,
+    title: string,
     cid: string,
     sid?: string,
     invNo: number,
-    Items: InvoiceItemType[],
+    items: InvoiceItemType[],
     discount: InvoiceDiscountType[],
     total: number,
     note: string,
     status: InvoiceStatusEnum,
-    dueDate: Date,
-    CreatedAt?: Date,
-    UpdatedAt?: Date
+    dueDate: Date | string,
+    createdAt?: Date,
+    createdBy?: string,
+    updatedAt?: Date,
+    updatedBy?: string,
+    isDeleted?: boolean
 }
 
 export type InvoiceOneType = {
     _id?: string,
+    title: string,
     cid: Customer,
     sid?: string,
     invNo: number,
-    Items: InvoiceItemType[],
+    items: InvoiceItemType[],
     discount: InvoiceDiscountType[],
     total: number,
     note: string,
     status: InvoiceStatusEnum,
-    dueDate: Date,
-    CreatedAt?: Date,
-    UpdatedAt?: Date
+    dueDate: Date | string,
+    createdAt?: Date,
+    createdBy?: string,
+    updatedAt?: Date,
+    updatedBy?: string,
+    isDeleted?: boolean
 }
 
 export enum InvoiceStatusEnum {

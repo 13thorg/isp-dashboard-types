@@ -18,5 +18,6 @@ export const Paths = {
     devicetypesListing: 'settings/device/device-type',
     templates: 'settings/communication/templates',
     services: 'services',
+    invoices: 'invoices',
     invoiceConfig: 'settings/invoice/config',
 }

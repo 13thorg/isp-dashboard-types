@@ -59,7 +59,7 @@ export type ServiceItemOneType = {
 }
 
 export type ServiceDiscountType = {
-    name: string,
+    title: string,
     amount: number,
     percentage: number,
 }
