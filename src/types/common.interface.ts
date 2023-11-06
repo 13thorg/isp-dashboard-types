@@ -168,3 +168,10 @@ export enum TimeUnitsForMongoDBENum {
     HOUR = 'hour',
     DAY = 'day',
 }
+
+export type LineBareGraphType = {
+    key: string,
+    title: string,
+    value: number,
+    backgroundColor: string
+}

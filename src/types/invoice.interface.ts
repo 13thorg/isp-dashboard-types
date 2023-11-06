@@ -60,3 +60,9 @@ export enum InvoiceStatusEnum {
     REFUND = 'REFUND',
     DRAFT = 'DRAFT'
 }
+
+export type InvoicePriseStatusType = {
+    status: InvoiceStatusEnum
+    totalCount: number
+    totalAmount: number
+}
