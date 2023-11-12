@@ -15,7 +15,7 @@ export enum DatabaseName {
     Order = "Order",
     Invoice = "Invoice",
     Transaction = "Transaction",
-    paymentGateway = "paymentGateway",
+    PaymentInstance = "paymentInstance",
     Config = "Config",
     Template = "Template",
     SmsHistory = "SmsHistory",

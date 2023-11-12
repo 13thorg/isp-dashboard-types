@@ -26,6 +26,7 @@
     "@types/node": "^18.14.0",
     "chalk": "^4.1.2",
     "jsonwebtoken": "^9.0.0",
+    "to-words": "^3.6.1",
     "tslib": "^2.5.0"
   },
   "files": [

@@ -20,4 +20,5 @@ export const Paths = {
     services: 'services',
     invoices: 'invoices',
     invoiceConfig: 'settings/invoice/config',
+    paymentGateway: '/settings/paymentGateway/'
 }
