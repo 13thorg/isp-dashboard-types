@@ -19,6 +19,7 @@ export type ServiceType = {
     createdBy?: string,
     updatedAt?: Date,
     updatedBy?: string,
+    _geneateInvoiceByStartDate?: boolean
 }
 
 export type ServiceOneType = {
@@ -36,6 +37,7 @@ export type ServiceOneType = {
     createdBy?: AdminsType,
     updatedAt?: Date,
     updatedBy?: AdminsType,
+    _geneateInvoiceByStartDate?: boolean,
 }
 
 export enum ServiceTypeEnum {
