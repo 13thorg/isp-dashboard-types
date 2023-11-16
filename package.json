@@ -33,6 +33,7 @@
     "lib/**/*"
   ],
   "devDependencies": {
-    "@types/jsonwebtoken": "^9.0.4"
+    "@types/jsonwebtoken": "^9.0.4",
+    "ts-node": "^10.9.1"
   }
 }
