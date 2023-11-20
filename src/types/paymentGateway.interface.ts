@@ -1,13 +1,27 @@
-import { Objects } from "./common.interface"
+import { InputSelectEnumType, InputTypeEnum } from "./inputs.interface"
 
-export type PaymentGatewayType = {
+export type PaymentGatewayType<T = undefined> = {
     _id?: string,
     name: string,
-    title: PaymentGatewayEnum,
-    credentials: Objects,
-    keys: string[],
+    image: string,
+    key: PaymentGatewayEnum,
+    credentials: T extends undefined ? any : T,
+    validations: PaymentGatewayValidationType[],
+    isActive: boolean,
+    isTempDown: boolean,
+    tempDownMessage?: string,
     CreatedAt?: Date,
     UpdatedAt?: Date
+}
+
+export type PaymentGatewayValidationType = {
+    isRequired: boolean,
+    title: string,
+    placeholder?: string
+    key: string,
+    type: InputTypeEnum,
+    enum: InputSelectEnumType[],
+    regex?: string
 }
 
 export enum PaymentRequestByEnum {
@@ -18,12 +32,20 @@ export enum PaymentRequestByEnum {
 }
 
 export type RezorpayGatewayType = {
-    isActive: boolean,
     clientId: string,
     secretKey: string,
-    displayName: string,
     callBackUrl: string,
     theamColor: string,
+}
+
+export type PaytmGatewayType = {
+    mId: string,
+    mKey: string,
+    website: string,
+    industryType: string,
+    channelId: PaytmChannelIdEnum,
+    callBackUrl: string,
+    paymentUrl: string,
 }
 
 export type RezorPayOrderNoteType = {
@@ -54,4 +76,31 @@ export enum RezorpayInstanceStatusEnum {
 export enum PaymentGatewayEnum {
     PAYTM_PAYMRNY_BANK = 'PAYTM_PAYMRNY_BANK',
     REZORPAY = 'REZORPAY'
+}
+
+export enum PaytmChannelIdEnum {
+    WEB = 'WEB',
+    WAP = 'WAP'
+}
+
+export type PaytmGatewayResponseType = {
+    BANKTXNID: string;
+    CHECKSUMHASH: string;
+    CURRENCY: string;
+    GATEWAYNAME?: string;
+    MID: string;
+    ORDERID: string;
+    PAYMENTMODE?: string;
+    RESPCODE: string;
+    RESPMSG: string;
+    STATUS: PaytmGatewayResponseStatusEnum;
+    TXNAMOUNT: string;
+    TXNDATE?: string;
+    TXNID: string;
+}
+
+export enum PaytmGatewayResponseStatusEnum {
+    TXN_SUCCESS = 'TXN_SUCCESS',
+    TXN_FAILURE = 'TXN_FAILURE',
+    PENDING = 'PENDING',
 }
