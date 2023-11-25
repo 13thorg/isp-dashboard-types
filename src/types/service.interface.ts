@@ -19,6 +19,7 @@ export type ServiceType = {
     createdBy?: string,
     updatedAt?: Date,
     updatedBy?: string,
+    generateInvoiceOn?: Date,
     _geneateInvoiceByStartDate?: boolean
 }
 
@@ -36,6 +37,7 @@ export type ServiceOneType = {
     createdAt?: Date,
     createdBy?: AdminsType,
     updatedAt?: Date,
+    generateInvoiceOn?: Date,
     updatedBy?: AdminsType,
     _geneateInvoiceByStartDate?: boolean,
 }
