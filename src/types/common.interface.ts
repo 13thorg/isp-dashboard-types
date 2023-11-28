@@ -172,6 +172,6 @@ export enum TimeUnitsForMongoDBENum {
 export type LineBareGraphType = {
     key: string,
     title: string,
-    value: number,
+    value: string,
     backgroundColor: string
 }
