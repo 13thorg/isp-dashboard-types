@@ -26,5 +26,6 @@ export enum DatabaseName {
     LoginLog = "LoginLog",
     ActivityLog = "ActivityLog",
     Service = "Service",
-    PaymentGateway="PaymentGateway",
+    PaymentGateway = "PaymentGateway",
+    Logger = "Logger"
 }
