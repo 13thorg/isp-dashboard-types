@@ -6,6 +6,7 @@ export enum SocketPurpose {
     LOGOUT_ALL = 'LOGOUT_ALL',
     MESSAGING = 'MESSAGING',
     CONSOLE_LOG = 'CONSOLE_LOG',
+    TRANSACTION_UPDATE = 'TRANSACTION_UPDATE'
 }
 
 export enum SocketType {

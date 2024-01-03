@@ -175,3 +175,18 @@ export type LineBareGraphType = {
     value: string,
     backgroundColor: string
 }
+
+export type DropDownMenuGroupType = {
+    title?: string,
+    options: DropDownMenuType[],
+}
+
+export type DropDownMenuType = {
+    title: string,
+    key: string,
+    icon?: string,
+    isDisabled: boolean,
+    bgColor?: string,
+    color?: string,
+    onClick?: (data: DropDownMenuType) => void
+}

@@ -7,11 +7,18 @@ export type PaymentGatewayType<T = undefined> = {
     key: PaymentGatewayEnum,
     credentials: T extends undefined ? any : T,
     validations: PaymentGatewayValidationType[],
+    availableTo: PaymentGatewayAvailableToType
     isActive: boolean,
     isTempDown: boolean,
     tempDownMessage?: string,
     CreatedAt?: Date,
     UpdatedAt?: Date
+}
+
+export type PaymentGatewayAvailableToType = {
+    byCustomers: boolean,
+    byAdmin: boolean,
+    bySubscription: boolean
 }
 
 export type PaymentGatewayValidationType = {
@@ -75,12 +82,13 @@ export enum RezorpayInstanceStatusEnum {
 
 export enum PaymentGatewayEnum {
     PAYTM_PAYMRNY_BANK = 'PAYTM_PAYMRNY_BANK',
-    REZORPAY = 'REZORPAY'
+    REZORPAY = 'REZORPAY',
+    OFFLINE = 'OFFLINE'
 }
 
 export enum PaytmChannelIdEnum {
     WEB = 'WEB',
-    WAP = 'WAP'
+    WAP = 'WAP',
 }
 
 export type PaytmGatewayResponseType = {
@@ -103,4 +111,19 @@ export enum PaytmGatewayResponseStatusEnum {
     TXN_SUCCESS = 'TXN_SUCCESS',
     TXN_FAILURE = 'TXN_FAILURE',
     PENDING = 'PENDING',
+}
+
+export type QRPaymentInstance = {
+    gatewatType: PaymentGatewayEnum,
+    orderId: string,
+    payment: QRPaymentAmount,
+    qrImage: string,
+    expireAt: Date | string,
+    qrContent?: string,
+}
+
+export type QRPaymentAmount = {
+    amount: string,
+    inNumber: number
+    inWord: string
 }
