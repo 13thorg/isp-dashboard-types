@@ -127,3 +127,8 @@ export type QRPaymentAmount = {
     inNumber: number
     inWord: string
 }
+
+export enum CreditTypeEnum {
+    IN = 'IN',
+    OUT = 'OUT'
+}

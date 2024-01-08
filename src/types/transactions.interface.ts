@@ -1,4 +1,4 @@
-import { PaymentGatewayEnum, PaymentRequestByEnum } from './paymentGateway.interface';
+import { CreditTypeEnum, PaymentGatewayEnum, PaymentRequestByEnum } from './paymentGateway.interface';
 export type TransactionType = {
     _id?: string,
     cid: string,
@@ -29,4 +29,22 @@ export enum TransactionStatusEnum {
     FAILED = 'FAILED',
     REFUND = 'REFUND',
     AUTHORIZED = 'AUTHORIZED',
+}
+
+export type CreditType = {
+    _id?: string
+    creditType: CreditTypeEnum,
+    cid: string,
+    transactionId?: string,
+    gateway: PaymentGatewayEnum,
+    orderId: string,
+    externalId: string,
+    amount: number,
+    refund: number,
+    status: TransactionStatusEnum,
+    message?: string,
+    transactionAt: Date,
+    expireAt?: Date
+    createdAt?: Date,
+    updatedAt?: Date
 }
